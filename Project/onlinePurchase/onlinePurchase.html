@@ -1,0 +1,278 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	
+ <style>
+    body, html {
+          width:100%;
+		  height: 100%;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+          font-weight: 100;
+          background-image:url("back3n.jpeg");
+          text-align: center;
+          font-family: helvetica;
+		  
+              }
+
+      .tabs input[type=radio] 
+	  {
+          position: absolute;
+
+
+      }
+	  
+      .tabs {
+        width: 650px;
+        float: none;
+        list-style: none;
+        position: relative;
+        padding: 0;
+        margin: 75px auto;
+		
+		
+		
+      }
+      .tabs li{
+        float: left;
+		background-color:Tan ;
+		
+      }
+      .tabs label {
+          display: block;
+          padding: 10px 20px;
+          border-radius: 0px 2px 0px 2px;
+          color: Teal ;
+          font-size: 24px;
+          font-weight: normal;
+          font-family: 'Lily Script One', helveti;
+          background: rgba(255,255,255,0.2);
+          cursor: pointer;
+          position: relative;
+          top: 3px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+		  
+      }
+      .tabs label:hover {
+        background: rgba(255,255,255,0.5);
+        top: 0;
+      }
+       
+      [id^=tab]:checked + label {
+        background: #08C;
+        color: white;
+        top: 0;
+      }
+       
+      [id^=tab]:checked ~ [id^=tab-content] {
+          display: block;
+      }
+      .tab-content{
+        z-index: 2;
+        display: none;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        line-height: 140%;
+        padding-top: 10px;
+        background: #08C;
+        padding: 15px;
+        color: white;
+        position: absolute;
+        top: 53px;
+        left: 0;
+        box-sizing: border-box;
+        -webkit-animation-duration: 0.5s;
+        -o-animation-duration: 0.5s;
+        -moz-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+      }
+	  
+	  
+	  
+	  a:link, a:visited
+	  {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+     }
+a:hover, a:active 
+     {
+    background-color: white;
+	  }
+	  
+	  
+	  h1{
+	   font-family: chiller;
+	   font-size:90px;
+	   color: maroon ;
+	  }
+	  
+	  #tab-content1{
+	  border-radius:0px 155px 0px 155px;
+	 background-color:Gainsboro  ;
+	 padding-right:10px;
+	 text-align:center;
+	  }
+	  .a{
+	   border-radius:0px 32px 5px 42px;
+	   }
+	   
+	    #tab-content2{
+	  border-radius:0px 250px 0px 250px;
+	 background-color:AntiqueWhite 	     ;
+	 
+	  }
+	  #tab-content3{
+	  border-radius:0px 160px 0px 160px;
+	 background-color:Silver      ;
+	 
+	  }
+	  
+	  
+	  .a{
+	   border-radius:0px 32px 5px 42px;
+	   }
+	   .imagr{
+	   border-radius:0px 32px 5px 42px;
+	     }
+	  h2{ text-align:center;
+	      font-size:50px;
+		  margin-top:0px;
+		  color:DarkSeaGreen ;
+		  font-family:times;
+		}
+
+	 
+	   </style>
+</head>
+<body>
+
+       <!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-left-align w3-large" >
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </li>
+    <li class="w3-hide-small"><a href="C:\Users\PRIYANK BHARDWAJ\Desktop\Project\Home\newHome.html" class="w3-padding-large w3-hover-white">HOME</a></li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium" style="position:fixed">
+    <ul class="w3-navbar w3-left-align w3-large w3-black">
+      <li><a class="w3-padding-large" href="C:\Users\PRIYANK BHARDWAJ\Desktop\Project\Home\createAccount1.html">HOME</a></li>
+    </ul>
+  </div>
+</div>
+</header>
+  <h1>
+    ONLINE PURCHASE
+  </h1>
+          <ul class="tabs" >
+                 <li  >
+                       <input type="radio" checked name="tabs" id="tab1">
+                       <label for="tab1">SHOPPING</label>
+                      <div id="tab-content1" class="tab-content animated fadeIn">
+					  <h2>SHOPPING</h2>
+
+					  <a href="https://www.amazon.in/ref=nav_logo" target="_blank" class="a">
+					  <img src="Pics\amazon-logo.png" class="imagr" alt="Paris">
+					  </a>
+
+
+                      <a href="https://www.flipkart.com/" target="_blank" class="a">
+					  <img src="Pics\flip.jpg" class="imagr" alt="Paris">
+					  </a>
+
+
+					  <a href="https://www.snapdeal.com/" target="_blank" class="a">
+					  <img src="Pics\snap.png" class="imagr" alt="Paris">
+					  </a>
+
+					  <a href="http://www.myntra.com/?src=logo" target="_blank" class="a">
+					  <img src="Pics\myntra.jpg" class="imagr" alt="Paris">
+					  </a>
+					  
+					   <a href="http://www.ebay.in/" target="_blank" class="a">
+					  <img src="Pics\ebay.png" class="imagr" alt="Paris">
+					  </a>
+					  
+					   <a href="http://www.jabong.com/" target="_blank" class="a">
+					  <img src="Pics\jabong.png" class="imagr" alt="Paris">
+					  </a>
+
+					  </div>
+                </li>
+
+        <li>
+          <input type="radio" name="tabs" id="tab2">
+          <label for="tab2">TICKETS</label>
+          <div id="tab-content2" class="tab-content animated fadeIn">
+
+		  <h2>TICKETS</h2>
+
+
+		           <a href="https://www.cleartrip.com/" target="_blank" class="a">
+					  <img src="Pics\cleartrip.png" class="imagr" alt="Paris">
+					  </a>
+
+
+                      <a href="https://www.goibibo.com/" target="_blank" class="a">
+					  <img src="Pics\goibibo.png" class="imagr" alt="Paris">
+					  </a>
+
+
+					  <a href="https://www.yatra.com/" target="_blank" class="a">
+					  <img src="Pics\yatra.jpg" class="imagr" alt="Paris">
+					  </a>
+
+					  <a href="https://www.irctc.co.in/eticketing/loginHome.jsf" target="_blank" class="a">
+					  <img src="Pics\irctc.jpg" class="imagr" alt="Paris">
+					  </a>
+
+					   <a href="https://www.makemytrip.com/" target="_blank" class="a">
+					  <img src="Pics\makemy.png" class="imagr" alt="Paris">
+					  </a>	 
+
+		  
+
+
+          </div>
+        </li>
+
+        <li>
+          <input type="radio" name="tabs" id="tab3">
+          <label for="tab3">PAY BILLS</label>
+          <div id="tab-content3" class="tab-content animated fadeIn">
+		  <h2>PAY BILLS</h2>
+             <a href="https://paytm.com/" target="_blank" class="a">
+					  <img src="Pics\paytym.jpg" class="imagr" alt="Paris">
+					  </a>
+
+
+                      <a href="https://www.freecharge.in/desktop/" target="_blank" class="a">
+					  <img src="Pics\freecharge.jpg" class="imagr" alt="Paris">
+					  </a>
+
+
+					  <a href="www.billdesk.com" target="_blank" class="a">
+					  <img src="Pics\bill.jpg" class="imagr" alt="Paris">
+					  </a>	
+          </div>
+        </li>
+</ul>
+</>
+</body>
+
+
+</html>
