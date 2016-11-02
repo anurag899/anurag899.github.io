@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Side Icon</title>
+	<style>
+		@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+		/* entypo */
+		[class*="entypo-"]:before {
+		   font-family: "entypo", sans-serif;
+		}
+		a { 
+		   text-decoration: none;
+		}
+		ul {
+		   list-style: none;
+		   margin: 0;
+		   padding: 0;
+		}
+		.container {
+		   margin: 0 auto;
+		   padding: 20px 50px;
+		   background: white;
+		}
+		#sticky-social {
+		   left: 0;
+		   position: fixed;
+		   top: 150px;
+		}
+		#sticky-social a {
+		   background: #333;
+		   color: #fff;
+		   display: block;
+		   height: 35px;
+		   font: 16px "Open Sans", sans-serif;
+		   line-height: 35px;
+		   position: relative;
+		   text-align: center;
+		   width: 35px;
+		}
+		#sticky-social a span {
+		   line-height: 35px;
+		   left: -120px;
+		   position: absolute;
+		   text-align:center;
+		   width:120px;
+		}
+		#sticky-social a:hover span {
+		   left: 100%;
+		}
+		#sticky-social a[class*="facebook"],
+		#sticky-social a[class*="facebook"]:hover,
+		#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+		#sticky-social a[class*="twitter"],
+		#sticky-social a[class*="twitter"]:hover,
+		#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+		#sticky-social a[class*="gplus"],
+		#sticky-social a[class*="gplus"]:hover,
+		#sticky-social a[class*="gplus"] span { background: #dd4b39; }  
+
+		#sticky-social a[class*="linkedin"],
+		#sticky-social a[class*="linkedin"]:hover,
+		#sticky-social a[class*="linkedin"] span { background: #007bb6; }  
+	</style>
+</head>
+<body>
+	<aside id="sticky-social">
+	    <ul>
+	        <li><a href="#" class="entypo-facebook" target="_blank"><span>Facebook</span></a></li>
+	        <li><a href="#" class="entypo-twitter" target="_blank"><span>Twitter</span></a></li>
+	        <li><a href="#" class="entypo-gplus" target="_blank"><span>Google+</span></a></li>
+	        <li><a href="#" class="entypo-linkedin" target="_blank"><span>LinkedIn</span></a></li>
+	    </ul>
+	</aside>
+</body>
+</html>
