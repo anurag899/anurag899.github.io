@@ -14,11 +14,12 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="img/favicon.ico" type="x-icon" />
     <!-- Theme CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -32,11 +33,39 @@
     <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
       <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     </li>
-	<li class="w3-hide-small" style="width:20%;text-align:center"><a href="../index.html" class="w3-padding-large w3-hover-white" style="color:white">The Bank</a></li>
-    <li class="w3-hide-small" style="width:20%;text-align:center"><a href="../createAccount1.html" class="w3-padding-large w3-hover-white" style="color:white">Create Account</a></li>
-   <li class="w3-hide-small" style="width:20%;text-align:center"> <a href="#link1"  class="w3-padding-large w3-hover-white" style="color:white">About</a></li>
-    <li class="w3-hide-small" style="width:20%;text-align:center"><a href="Loan_page\Loan.html" class="w3-padding-large w3-hover-white" style="color:white">Education Loan</a></li>
-     <li class="w3-hide-small" style="width:20%;text-align:center"><a href="updateAccount\updateAccount.html" class="w3-padding-large w3-hover-white" style="color:white">Update Account</a></li>
+	<li class="w3-hide-small" style="width:13%;text-align:center"><a href="../index.html" class="w3-padding-large w3-white" style="color:white">Home</a></li>
+    <li class="w3-hide-small" style="width:16%;text-align:center"><a href="../createAccount/createAccount1.html" class="w3-padding-large w3-hover-white" style="color:white">Create Account</a></li>
+    <li class="w3-hide-small" style="width:16%;text-align:center"><a href="../Loan_page/Loan.html" class="w3-padding-large w3-hover-white" style="color:white">Education Loan</a></li>
+     <li class="w3-hide-small" style="width:16%;text-align:center"><a href="../updateAccount/updateAccount.html" class="w3-padding-large w3-hover-white" style="color:white">Update Account</a></li>
+	  <li class="w3-hide-small" style="width:16%;text-align:center"><a onclick="document.getElementById('id01').style.display='block'"  class="w3-padding-large w3-hover-white" style="color:white">Sign In</a></li>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">×</span>
+        <img src="img/users.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+     
+
+      <form class="w3-container w3-card-8" action="form.asp">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="w3-btn-block w3-green w3-section w3-padding" type="submit">Login</button>
+          
+        </div>
+      </form>
+      </div>
+      <div class="w3-container w3-border-top  w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+	 <li class="w3-hide-small" style="width:16%;text-align:center"> <a href="#link1"  class="w3-padding-large w3-hover-white" style="color:white">About</a></li>
 	 
 
    
@@ -48,9 +77,9 @@
   <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium" style="position:fixed">
     <ul class="w3-navbar w3-left-align w3-large w3-black">
 	  <li><a class="w3-padding-large" href="../index.html" style="color:white">Home</a></li>
-      <li><a class="w3-padding-large" href="createAccount1.html" style="color:white">Create Account</a></li>
-      <li><a class="w3-padding-large" href="fundTransfer\fundTransfer.html" style="color:white">Fund Transfer</a></li>
-      <li><a class="w3-padding-large" href="#" style="color:white">Education Loan</a></li>
+      <li><a class="w3-padding-large" href="../createAccount/createAccount1.html" style="color:white">Create Account</a></li>
+      <li><a class="w3-padding-large" href="../fundTransfer/fundTransfer.html" style="color:white">Fund Transfer</a></li>
+      <li><a class="w3-padding-large" href="../Loan_page/Loan.html" style="color:white">Education Loan</a></li>
       <li><a class="w3-padding-large" href="updateAccount\updateAccount.html" style="color:white">Update Account</a></li>
 
 
@@ -111,14 +140,14 @@ button {
 }
 
 </style>
-    <header  class="intro-header" style="background-color: lightgreen">
+    <header  class="intro-header" style="background-color:lightgreen">
         <div class="w3-container w3-padding-128">
             <div  class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div id="tips" class="site-heading">
 
                         <h1 >Make Transfer</h1><br>
-                        <form>
+                        <form style="color:grey;">
                             <input type="text" PayeeAccno="pnum" placeholder="PayeeAccNo" required="required" />
                             
                             <input type="text" amount="amt" placeholder="Amount" required="required" />
@@ -145,6 +174,13 @@ button {
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+	<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+   <div class="w3-container w3-padding-4  w3-xlarge w3-black">
+         <h1 class="w3-center w3-allerta w3-text-white w3-jumbo"></h1>
+         <p class="w3-center w3-allerta">Powered By- NIT Manipur...</p>
+    </div>
+</footer>
 
 </body>
 

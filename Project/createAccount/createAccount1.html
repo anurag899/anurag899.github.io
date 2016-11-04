@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
-    <link rel="shortcut icon" href="createAccount/pics/favicon.ico"/>
+    <link rel="shortcut icon" href="pics/favicon.ico" type="x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <head>
   <title>createAccount</title>
@@ -21,18 +21,49 @@
 <body>
 
     <!--Header-->
+		  <!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-left-align w3-deep-orange w3-large" >
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </li>
+	<li class="w3-hide-small" style="width:20%;text-align:center"><a href="../index.html" class="w3-padding-large w3-white" style="color:white">Home</a></li>
+    <li class="w3-hide-small" style="width:20%;text-align:center"><a href="../fundTransfer/fundTransfer.html" class="w3-padding-large w3-hover-white" style="color:white">Fund Transfer</a></li>
+    <li class="w3-hide-small" style="width:20%;text-align:center"><a href="../Loan_page/Loan.html" class="w3-padding-large w3-hover-white" style="color:white">Education Loan</a></li>
+     <li class="w3-hide-small" style="width:20%;text-align:center"><a href="../updateAccount/updateAccount.html" class="w3-padding-large w3-hover-white" style="color:white">Update Account</a></li>
+	 <li class="w3-hide-small" style="width:20%;text-align:center"> <a href="#link1"  class="w3-padding-large w3-hover-white" style="color:white">About</a></li>
+	 
 
-    <div class="w3-container w3-padding-4  w3-xlarge w3-orange">
-         <h1 class="w3-center w3-allerta w3-text-white w3-jumbo">It is a simple 4 step process</h1>
+   
+  </li>
+  
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium" style="position:fixed">
+    <ul class="w3-navbar w3-left-align w3-large w3-black">
+	  <li><a class="w3-padding-large" href="../index.html" style="color:white">Home</a></li>
+      <li><a class="w3-padding-large" href="../createAccount/createAccount1.html" style="color:white">Create Account</a></li>
+      <li><a class="w3-padding-large" href="../fundTransfer/fundTransfer.html" style="color:white">Fund Transfer</a></li>
+      <li><a class="w3-padding-large" href="../Loan_page/Loan.html" style="color:white">Education Loan</a></li>
+      <li><a class="w3-padding-large" href="updateAccount\updateAccount.html" style="color:white">Update Account</a></li>
+
+
+    </ul>
+  </div>
+</div>
+
+    <div class="w3-container w3-padding-32  w3-xlarge w3-orange">
+         <h1 class="w3-center w3-allerta w3-text-white w3-jumbo">It is a simple 5 step process</h1>
          <p class="w3-center w3-allerta">Let's get started...</p>
     </div>
  <div>
     <ul class="w3-navbar w3-blue w3-large">
-        <li class="w3-allerta w3-red" style="width:20%;text-align:center" ><a href="../index.html">The Bank</a></li>
-        <li class="w3-allerta w3-pink" style="width:20%;text-align:center" ><a href="personalDetails.html">Personal Details</a></li>
-        <li class="w3-allerta w3-yellow" style="width:20%;text-align:center"><a href="contactDetails.html">Contact Details</a></li>
+        
+        <li class="w3-allerta w3-red" style="width:20%;text-align:center" ><a href="personalDetails.html">1. Personal Details</a></li>
+        <li class="w3-allerta w3-pink" style="width:20%;text-align:center"><a href="contactDetails.html">2. Contact Details</a></li>
         <li class="w3-dropdown-hover w3-allerta w3-blue" style="width:20%;text-align:center">
-         <a href="#">Identity Details <i class="fa fa-caret-down"></i></a>
+         <a href="#">3. Identity Details <i class="fa fa-caret-down"></i></a>
         <div class="w3-dropdown-content w3-white w3-card-4">
                 <form action="form.php" method="post"class="w3-contain er w3-center" enctype="multipart/form-data">
                     <div class="w3-container">
@@ -68,7 +99,7 @@
         -->
 
        <li class="w3-dropdown-hover w3-allerta w3-purple" style="width:20%;text-align:center">
-         <a href="#">Upload Picture <i class="fa fa-caret-down"></i></a>
+         <a href="#">4. Upload Picture <i class="fa fa-caret-down"></i></a>
         <div class="w3-dropdown-content w3-white w3-left-align w3-card-4">
         <div class="w3-container w3-panel">
         <form action="upload.php" method="post" enctype="multipart/form-data">
@@ -80,7 +111,26 @@
                  </div>
         </div>
         </li>
+		<li class="w3-dropdown-hover w3-allerta w3-yellow" style="width:20%;text-align:center">
+         <a href="#">5. Confirm <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+                <form action="form.php" method="post"class="w3-contain er w3-center" enctype="multipart/form-data">
+                    <div class="w3-container">
+                 <input class="w3-input w3-center w3-animate-input" type="name" placeholder="User Name"style="width:50%"><br>
+                 <input class="w3-input w3-center w3-animate-input" type="Password" placeholder="Password"style="width:50%"><br>
+				 <div class="w3-row">
+				 <div class="w3-container w3-center">
+				 <input class="w3-btn-block w3-green w3-margin-bottom" type="submit" value="Confirm" name="Confirm" style="width:100%">
+				 
+                 <a href="../index.html"class="w3-btn-block w3-center w3-red w3-margin-bottom"  style="width:100%">Cancel</a>
+				 
+				 </div>
+                 </div>
+                </form>
 
+
+        </div>
+        </li>
     </ul>
 </div>
 <img src="pics/1.jpg" style="width:100%;height:40%">
